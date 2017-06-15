@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<!--   <p *ngFor="let item of items">
+    {{item}}
+  </p> -->
+  <p>
+
+  <ion-item>
+  <ion-label>Sugu</ion-label>
+  <ion-select [(ngModel)]="gender">
+    <ion-option value="Naine" selected="true">Naine</ion-option>
+    <ion-option value="Mees">Mees</ion-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label>Vanus</ion-label>
+  <ion-select [(ngModel)]="age">
+    <ion-option value="18">18</ion-option>
+    <ion-option value="24">24</ion-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label>Kaal</ion-label>
+  <ion-select [(ngModel)]="weight">
+    <ion-option value="59" selected="true">59</ion-option>
+    <ion-option value="111">111</ion-option>
+  </ion-select>
+</ion-item>
+
+<!--     <ion-label fixed>Company Name</ion-label>
+    <ion-input type="text" name="company" [(ngModel)]="company">
+    </ion-input> -->
+    <button ion-button (click)="save(age); save(weight); save(gender)">Add</button>
+  </p>
+</ion-content>
